@@ -3,7 +3,7 @@
 require 'rspec'
 require 'day01'
 
-RSpec.describe 'Day 01' do
+RSpec.describe Day01 do
   input = <<~INPUT
     1abc2
     pqr3stu8vwx
@@ -22,10 +22,10 @@ RSpec.describe 'Day 01' do
   INPUT2
 
   it 'part1 succeeds' do
-    expect(part1(input)).to eq 142
+    expect(Day01.part1(input)).to eq 142
   end
 
   it 'part2 succeeds' do
-    expect(part2(input2)).to eq 281
+    expect(Day01.part2(input2)).to eq 281
   end
 end

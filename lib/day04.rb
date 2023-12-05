@@ -3,13 +3,13 @@
 module Day04
   def self.base(input)
     input.split("\n")
-         .map { |line| line.split(":").last }
-         .map { |line| line.split("|").map { |g| g.scan(/\d+/) } }
+         .map { |line| line.split(':').last }
+         .map { |line| line.split('|').map { |g| g.scan(/\d+/) } }
          .map { |card| card.first.to_set.intersection(card.last.to_set) }
   end
 
   def self.part1(input)
-    base(input).map { |common| common.empty? ? 0 : 2 ** (common.length - 1) }
+    base(input).map { |common| common.empty? ? 0 : 2**(common.length - 1) }
                .sum
   end
 

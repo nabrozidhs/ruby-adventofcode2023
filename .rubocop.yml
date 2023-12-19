@@ -30,6 +30,15 @@ Naming/MethodParameterName:
 Layout/LineLength:
   Enabled: false
 
+Security/Eval:
+  Enabled: false
+
+Style/DocumentDynamicEvalDefinition:
+  Enabled: false
+
+Style/EvalWithLocation:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
